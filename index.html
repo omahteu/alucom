@@ -1072,7 +1072,7 @@
             </button>
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Aluguel</button>
+                <button type="button" class="btn btn-primary" id="gotoAluguel">Aluguel</button>
             </div>
         </div>
         </div>
@@ -1089,7 +1089,7 @@
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-primary">Almoxarife</button>
-            <button type="button" class="btn btn-primary">Aluguel</button>
+            <button type="button" class="btn btn-primary" id="gotoAluguel">Aluguel</button>
             </div>
         </div>
         </div>
@@ -1123,6 +1123,14 @@
     <script src="./js/lib/owl-carousel/owl.carousel-init.js"></script>
     <!-- scripit init-->
     <script src="./js/dashboard2.js"></script>
+
+    <script>
+
+        var btn = document.getElementById("gotoAluguel")
+        btn.addEventListener("click", function() {
+            window.location.href = "./aluguel.html"
+        })
+    </script>
 </body>
 
 </html>

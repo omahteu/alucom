@@ -4,10 +4,13 @@ $(document).on("click", "#abaMovimentacaoAluguel", function() {
         `
         <form>
 
+            <h2>Aluguel de Equipamentos</h2>
+
             <div class="form-row">
                 <div class="form-group col-md-10">
-                    <label for="inputEmail4">Número ou Nome do Cliente</label>
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Número ou Nome do Cliente">
+                    <label for="searchClientAluguel">Número ou Nome do Cliente</label>
+                    <input type="text" class="form-control" id="searchClientAluguel" name="searchClientAluguel" placeholder="Número ou Nome do Cliente">
+                    <div id="ACClientAluguel"></div>
                 </div>
                 <div class="form-group col-md-2">
                     <label for="inputEmail4">.</label>
@@ -25,7 +28,6 @@ $(document).on("click", "#abaMovimentacaoAluguel", function() {
                     <button type="button" class="form-control">Selecionar</button>
                 </div>
             </div>
-
 
             <div class="form-row">
                 <div class="form-group col-md-3">

@@ -1,0 +1,29 @@
+#ACClientAluguel {
+    display: none;
+    background-color: white;
+    border: solid 1px #333;
+    position: absolute;
+    height: 150px;
+    overflow: scroll;
+    width: 50%;
+    z-index: 9999;
+}
+
+#ACClientAluguel ul {
+    list-style: none;
+    padding: 5px;
+}
+
+#ACClientAluguel ul li {
+    border-bottom: solid 1px #333;
+}
+
+#ACClientAluguel ul li:hover {
+    background-color: beige;
+    cursor: pointer;
+}
+
+#ACClientAluguel ul li a {
+    text-decoration: none;
+    color: blue;
+}

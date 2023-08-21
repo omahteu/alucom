@@ -1,5 +1,3 @@
-import {adas} from "../../../../php/core/c"
-
 $(document).on("click", "#abaMovimentacaoAluguel", function() {
     var searchClient = document.querySelector("#searchClientAluguel")
     var autocomplete = document.querySelector("#ACClientAluguel")
@@ -7,9 +5,10 @@ $(document).on("click", "#abaMovimentacaoAluguel", function() {
 
 
         try {
-            const {data} = await axios.get("../../../../php/core/clientes.php")
+            const {data} = await axios.get("/dados.json")
+            console.log('data')
         } catch (error) {
-            console.log(error)
+            console.log('error')
         }
 
 
@@ -18,6 +17,6 @@ $(document).on("click", "#abaMovimentacaoAluguel", function() {
 
 
 
-        console.log(event.target.value)
+        //console.log(event.target.value)
     }, 500))
 })

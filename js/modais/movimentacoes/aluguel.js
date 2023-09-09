@@ -9,13 +9,15 @@ $(document).on("click", "#abaMovimentacaoAluguel", function() {
             <div class="form-row">
                 <div class="form-group col-md-10">
                     <label for="searchClientAluguel">Número ou Nome do Cliente</label>
-                    <input type="text" class="form-control" id="searchClientAluguel" name="searchClientAluguel" placeholder="Número ou Nome do Cliente">
+                    <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Pesquisar usuário" onkeyup="carregar_usuarios(this.value)" />
+                    <span id="resultado_pesquisa"></span>
                     <div id="ACClientAluguel"></div>
                 </div>
                 <div class="form-group col-md-2">
                     <label for="inputEmail4">.</label>
                     <button type="button" class="form-control">Selecionar</button>
                 </div>
+                <input type="hidden" name="id_usuario" class="form-control" id="id_usuario">
             </div>
 
             <div class="form-row">

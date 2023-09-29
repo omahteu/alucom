@@ -5,79 +5,79 @@ $(document).on("click", "#abaCadastroEquipamento", function() {
         <form>
             <div class="form-row">
                 <div class="form-group col-md-3">
-                    <label for="inputPassword4">Tipo</label>
-                    <select class="form-control">
+                    <label for="">Tipo</label>
+                    <select class="form-control" name="tipo">
                         <option hidden>Tipo</option>
                     </select>
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="inputPassword4">Repetir este registro</label>
-                    <input type="text" class="form-control" placeholder="Repetir este registro">
+                    <label for="">Repetir este registro</label>
+                    <input type="text" class="form-control" name="repeticoes" placeholder="Repetir este registro">
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="inputPassword4">Número</label>
-                    <input type="text" class="form-control" placeholder="Número">
+                    <label for="">Número</label>
+                    <input type="text" class="form-control" name="numero" placeholder="Número">
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="inputPassword44">Numeração Automática</label>
-                    <input type="radio" class="form-control" id="inputPassword44">
+                    <label for="">Numeração Automática</label>
+                    <input type="radio" class="form-control" name="numeracaoauto">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-12">
-                    <label for="inputEmail4">Observações</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Observações">
+                    <label for="">Observações</label>
+                    <input type="text" class="form-control" name="observacoes" placeholder="Observações">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-12">
-                    <label for="inputEmail4">Descrição</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Descrição">
+                    <label for="">Descrição</label>
+                    <input type="text" class="form-control" name="descricao" placeholder="Descrição">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-3">
-                    <label for="inputEmail4">Valor em Dólar</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Valor em Dólar">
+                    <label for="">Valor em Dólar</label>
+                    <input type="text" class="form-control" name="vdolar" placeholder="Valor em Dólar">
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="inputEmail4">Valor em Real</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Valor em Real">
+                    <label for="">Valor em Real</label>
+                    <input type="text" class="form-control" name="vreal" placeholder="Valor em Real">
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="inputEmail4">Valor para Aluguel</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Valor para Aluguel">
+                    <label for="">Valor para Aluguel</label>
+                    <input type="text" class="form-control" name="valuguel" placeholder="Valor para Aluguel">
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="inputEmail4">Valor Alugado</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Valor Alugado">
+                    <label for="">Valor Alugado</label>
+                    <input type="text" class="form-control" name="valoralugado" placeholder="Valor Alugado">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-3">
-                    <label for="inputEmail4">Fornecedor</label>
-                    <select class="form-control">
+                    <label for="">Fornecedor</label>
+                    <select class="form-control" name="fornecedor">
                         <option hidden>Fornecedor</option>
                     </select>
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="inputEmail4">Data da Aquisição</label>
-                    <input type="datetime-local" class="form-control" name="" id="">
+                    <label for="">Data da Aquisição</label>
+                    <input type="datetime-local" class="form-control" name="daquisicao" id="">
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="inputEmail4">Data da Locação</label>
-                    <input type="datetime-local" class="form-control" name="" id="">
+                    <label for="">Data da Locação</label>
+                    <input type="datetime-local" class="form-control" name="dlocacao" id="">
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="inputEmail4">Data da Garantia Até</label>
-                    <input type="datetime-local" class="form-control" name="" id="">
+                    <label for="">Data da Garantia Até</label>
+                    <input type="datetime-local" class="form-control" name="dgarantia" id="">
                 </div>
             </div>
-            <button type="button" class="btn btn-primary">Salvar</button>
+            <button type="submit" class="btn btn-primary">Salvar</button>
         </form>
         `
     )

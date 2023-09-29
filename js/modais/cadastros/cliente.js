@@ -2,21 +2,21 @@ $(document).on("click", "#abaCadastroCliente", function() {
     let area = $("#main-content")
     area.html(
         `
-        <form>
+        <form method="post" id="cadastroClientes">
             <div class="form-row">
                 <div class="form-group col-md-4">
-                    <label for="inputEmail4">Nome/Razão Social</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Nome/Razão Social">
+                    <label for="">Nome/Razão Social</label>
+                    <input type="text" class="form-control" name="nrs" placeholder="Nome/Razão Social">
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="inputPassword4">Secretaria</label>
-                    <select class="form-control">
+                    <label for="">Secretaria</label>
+                    <select class="form-control" name="secretaria">
                         <option hidden>Secretaria</option>
                     </select>
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="inputPassword4">Tipo</label>
-                    <select class="form-control">
+                    <label for="">Tipo</label>
+                    <select class="form-control" name="tipo">
                         <option hidden>Tipo</option>
                         <option>Física</option>
                         <option>Jurídica</option>
@@ -26,42 +26,42 @@ $(document).on("click", "#abaCadastroCliente", function() {
 
             <div class="form-row">
                 <div class="form-group col-md-4">
-                    <label for="inputEmail4">CPF/CNPJ</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="CPF/CNPJ">
+                    <label for="">CPF/CNPJ</label>
+                    <input type="text" class="form-control" name="cpfcnpj" placeholder="CPF/CNPJ">
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="inputEmail4">RG/CGF</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="RG/CGF">
+                    <label for="">RG/CGF</label>
+                    <input type="text" class="form-control" name="rgcgf" placeholder="RG/CGF">
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputEmail4">CGC</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="CGC">
+                    <input type="text" class="form-control" name="cgc" placeholder="CGC">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-4">
-                    <label for="inputEmail4">CEP</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="CEP">
+                    <label for="">CEP</label>
+                    <input type="text" class="form-control" name="cep" placeholder="CEP">
                 </div>
                 <div class="form-group col-md-8">
-                    <label for="inputEmail4">Endereço</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Endereço">
+                    <label for="">Endereço</label>
+                    <input type="text" class="form-control" name="endereco" placeholder="Endereço">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-4">
-                    <label for="inputCity">Bairro</label>
-                    <input type="text" class="form-control" id="inputCity" placeholder="Bairro">
+                    <label for="">Bairro</label>
+                    <input type="text" class="form-control" name="bairro" placeholder="Bairro">
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="inputState">Cidade</label>
-                    <input type="text" class="form-control" id="inputCity" placeholder="Cidade">
+                    <label for="">Cidade</label>
+                    <input type="text" class="form-control" name="cidade" placeholder="Cidade">
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="inputZip">Estado</label>
-                    <select class="form-control">
+                    <label for="">Estado</label>
+                    <select class="form-control" name="estado">
                         <option hidden>Estado</option>
                         <option>AC</option>
                         <option>AL</option>
@@ -93,7 +93,7 @@ $(document).on("click", "#abaCadastroCliente", function() {
                     </select>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary">Salvar</button>
+            <button type="submit" class="btn btn-primary">Salvar</button>
         </form>
         `
     )

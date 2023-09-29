@@ -4,17 +4,17 @@ $(document).on("click", "#abaCadastroCliente", function() {
         `
         <form>
             <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-4">
                     <label for="inputEmail4">Nome/Razão Social</label>
                     <input type="email" class="form-control" id="inputEmail4" placeholder="Nome/Razão Social">
                 </div>
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-4">
                     <label for="inputPassword4">Secretaria</label>
                     <select class="form-control">
                         <option hidden>Secretaria</option>
                     </select>
                 </div>
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-4">
                     <label for="inputPassword4">Tipo</label>
                     <select class="form-control">
                         <option hidden>Tipo</option>
@@ -51,7 +51,7 @@ $(document).on("click", "#abaCadastroCliente", function() {
             </div>
 
             <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-4">
                     <label for="inputCity">Bairro</label>
                     <input type="text" class="form-control" id="inputCity" placeholder="Bairro">
                 </div>
@@ -59,7 +59,7 @@ $(document).on("click", "#abaCadastroCliente", function() {
                     <label for="inputState">Cidade</label>
                     <input type="text" class="form-control" id="inputCity" placeholder="Cidade">
                 </div>
-                <div class="form-group col-md-2">
+                <div class="form-group col-md-4">
                     <label for="inputZip">Estado</label>
                     <select class="form-control">
                         <option hidden>Estado</option>
